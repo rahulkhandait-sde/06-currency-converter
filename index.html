@@ -19,4 +19,19 @@ module.exports = {
   ],
   theme: { extend: {} },
   plugins: [],
+
+  darkMode: 'class', // Enable dark mode support
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark'],
+      borderColor: ['dark'],
+    },
+  },
+  corePlugins: {
+    preflight: false, // Disable Tailwind's base styles if you want to use your own CSS reset
+  },
+  future: {
+    hoverOnlyWhenSupported: true, // Enable hover styles only when supported
+  },
 }
